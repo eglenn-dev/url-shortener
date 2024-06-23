@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main class="main-area">
+        <header class="text-header">
+            <div class="typewriter">
+                <h1>URL Shortener</h1>
+            </div>
+            <p>Please enter your URL below to create a shortened version.</p>
+        </header>
+        <div id="urlArea">
+            <form class="flex-column gap" id="url-form">
+                <input class="url-input" type="url" name="url" id="url" placeholder="Enter URL" required>
+                <button class="submit-button" type="submit">Shorten Now</button>
+            </form>
+        </div>
+        <span class="buffer"></span>
+        <div id="statsArea">
+            <div>If you are here to track the stats of a shortened URL, please enter the shortened URL below.</div>
+            <form class="flex-column gap" id="stats-form">
+                <input class="url-input" type="text" name="shortUrl" id="shortUrl" placeholder="Enter shortened URL"
+                    required>
+                <button class="submit-button" type="submit">Get Stats</button>
+            </form>
+        </div>
+    </main>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
